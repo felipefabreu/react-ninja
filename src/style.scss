@@ -1,0 +1,22 @@
+.form-teste{
+    width: 30em;
+    
+    display: flex;
+    flex-direction: column;
+
+    .grupo-teste{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .form-title{
+        text-align: center;
+    }
+
+    .btn-form-teste{
+        width: 10em;
+        align-self: flex-end;
+    }
+
+}

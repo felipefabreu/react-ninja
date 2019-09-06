@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM, { render } from 'react-dom';
 import './index.css';
+import './style.css';
 
 // interface IMyComponentProps{
 //     someDefaultValue: string;
@@ -20,11 +21,11 @@ export default class Teste extends Component<any, any>{
     public render(){
         
         return (
-            <div>
+            
                 <form className="form-teste">
-                    <h1>Teste form</h1>
+                    <h1 className="form-title">Teste form</h1>
 
-                    <div className="form-group">
+                    <div className="form-group grupo-teste">
                         <label htmlFor="name">Name</label>
                         <input type="text" name="name" id="name" className="form-control"/>
                     </div>
@@ -39,9 +40,9 @@ export default class Teste extends Component<any, any>{
                         <input type="text" name="pais" id="pais" className="form-control"/>
                     </div>
 
-                    <input type="submit" className="btn btn-primary" value="Salvar"/>
+                    <input type="submit" className="btn btn-primary btn-form-teste" value="Salvar"/>
                 </form>
-            </div>
+            
         );
 
     }
